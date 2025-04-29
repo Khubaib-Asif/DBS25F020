@@ -1,0 +1,52 @@
+-- USERS TABLE
+CREATE TABLE users (
+    user_id INT AUTO_INCREMENT PRIMARY KEY,
+    username VARCHAR(50) NOT NULL UNIQUE,
+    hashed_password VARCHAR(255),
+    email VARCHAR(50) NOT NULL UNIQUE,
+    role ENUM('Admin', 'Farmer', 'Expert') NOT NULL
+);
+
+-- FARMER PROFILE
+CREATE TABLE farmer_profile (
+    farmer_id INT AUTO_INCREMENT PRIMARY KEY,
+    
+    first_name VARCHAR(50) NOT NULL,
+    last_name VARCHAR(50),
+    cnic CHAR(13) NOT NULL UNIQUE,
+    profile_pic VARCHAR(300),
+    address VARCHAR(255) NOT NULL,
+    contact CHAR(11) NOT NULL,
+    email VARCHAR(50) UNIQUE check(email like ('%@% ' or '@gmail.com')),
+    dob DATE not null ,
+    age INT CHECK (age >= 10),
+   foreign key(email) references users(email)
+);
+
+-- EXPERT PROFILE
+CREATE TABLE expert_profile (
+    e_id INT AUTO_INCREMENT PRIMARY KEY,
+    first_name VARCHAR(50) not null,
+    last_name VARCHAR(50) ,
+    profile_pic VARCHAR(300),
+    cnic CHAR(13) UNIQUE not null,
+    email VARCHAR(50) UNIQUE check(email like ('%@% ' or '@gmail.com')),
+    address VARCHAR(255) not null,
+    dob DATE NOT NULL,
+    contact CHAR(11) NOT NULL ,
+    FOREIGN KEY (email) REFERENCES users(email)
+);
+
+-- EDUCATIONAL INFO
+CREATE TABLE educational_info (
+    edu_id INT AUTO_INCREMENT PRIMARY KEY,
+    e_id INT,
+    degree_type ENUM('HSC', 'BSc', 'MSc', 'PhD'),
+    roll_number VARCHAR(20) not null,
+    obtained_marks INT not null,
+    total_marks INT not null,
+    description VARCHAR(300) not null,
+    passing_year INT  not null ,
+    degree_pic VARCHAR(255),
+    FOREIGN KEY (e_id) REFERENCES expert_profile(e_id)
+);
