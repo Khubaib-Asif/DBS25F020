@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "AgricultureManagementSystem/1.0.0": {
+        "runtime": {
+          "AgricultureManagementSystem.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "AgricultureManagementSystem/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
