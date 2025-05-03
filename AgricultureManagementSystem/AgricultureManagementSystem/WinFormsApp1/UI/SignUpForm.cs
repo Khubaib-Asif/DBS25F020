@@ -1,13 +1,6 @@
-﻿using Microsoft.VisualBasic.ApplicationServices;
-using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System;
 using System.Windows.Forms;
+
 namespace AgricultureManagementSystem
 {
     public partial class SignUpForm : Form
@@ -15,58 +8,42 @@ namespace AgricultureManagementSystem
         public SignUpForm()
         {
             InitializeComponent();
-            btnlogin.Click += btnRegister_Click;
-            cbShowpassword.CheckedChanged += new EventHandler(this.cbShowpassword_CheckedChanged);
+            cbShowpassword.CheckedChanged += CbShowpassword_CheckedChanged;
+            //btnSignUp.Click += BtnSignUp_Click;
         }
-        private void cbShowpassword_CheckedChanged(object sender, EventArgs e)
+
+        private void CbShowpassword_CheckedChanged(object sender, EventArgs e)
         {
             txtPassword.UseSystemPasswordChar = !cbShowpassword.Checked;
         }
-        private void btnRegister_Click(object sender, EventArgs e)
-        {
-            LoginForm loginForm = new LoginForm();
-            loginForm.FormClosed += (s, args) => this.Close(); 
-            loginForm.Show();
-            this.Hide();
-        }
+
         private void BtnSignUp_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void button1_Click(object sender, EventArgs e)
         {
             string email = txtEmail.Text.Trim();
             string username = textBox1.Text.Trim();
             string password = txtPassword.Text.Trim();
             string role = cmbRoleID.SelectedItem?.ToString();
 
-            if (string.IsNullOrEmpty(email) || string.IsNullOrEmpty(username) ||
-                string.IsNullOrEmpty(password) || string.IsNullOrEmpty(role))
+            if (string.IsNullOrWhiteSpace(email) || string.IsNullOrWhiteSpace(username) ||
+                string.IsNullOrWhiteSpace(password) || string.IsNullOrWhiteSpace(role))
             {
-                MessageBox.Show("Please fill all fields.", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("Please fill in all fields.");
                 return;
             }
 
-            // Create user object
-            SignUser newUser = new SignUser(email,username,password,role);
-            newUser.SetEmail(email);
-            newUser.SetUsername(username);
-            newUser.SetPassword(password);
-            newUser.SetRole(role);
+            Users newUser = new Users(username, password, email, role);
+            bool success = newUser.Insert();
 
-            // Call Business Logic Layer
-            //UserBL userBL = new UserBL();
-            //bool isRegistered = userBL.RegisterUser(newUser);
-
-            //if (isRegistered)
-            //{
-            //    MessageBox.Show("Sign up successful. Proceeding to info form...", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
-            //    // Navigate to InfoForm
-            //    InfoForm infoForm = new InfoForm(newUser);
-            //    infoForm.Show();
-            //    this.Hide();
-            //}
-            //else
-            //{
-            //    MessageBox.Show("Registration failed. Please try again.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            //}
+            if (success)
+            {
+                MessageBox.Show("User registered successfully.");
+                // Optionally open login form
+            }
         }
     }
 }

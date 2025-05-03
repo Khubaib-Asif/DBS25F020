@@ -3,6 +3,7 @@ using System.Data;
 using System.Windows.Forms;
 using Microsoft.VisualBasic.ApplicationServices;
 using MySql.Data.MySqlClient;
+using Org.BouncyCastle.Bcpg;
 namespace AgricultureManagementSystem
 {
     public partial class LoginForm : Form
@@ -94,5 +95,41 @@ namespace AgricultureManagementSystem
             this.Hide();
         }
 
+        private void panel3_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            string email = txtEmail.Text.Trim();
+            string password = txtPassword.Text.Trim();
+
+            if (string.IsNullOrWhiteSpace(email) || string.IsNullOrWhiteSpace(password))
+            {
+                MessageBox.Show("Please enter both email and password.");
+                return;
+            }
+
+            Users loggedInUser = Users.Login(email, password);
+
+            if (loggedInUser != null)
+            {
+                MessageBox.Show($"Login successful. Welcome, {loggedInUser.Role}!");
+                if (loggedInUser.Role == "Farmer")
+                {
+
+                }
+                else if (loggedInUser.Role == "admin")
+                {
+                }
+
+                
+            }
+            else
+            {
+                MessageBox.Show("Invalid email or password.");
+            }
+        }
     }
 }

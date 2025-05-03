@@ -41,10 +41,6 @@ C:\Users\HP\Videos\AgricultureManagementSystem\WinFormsApp1\obj\Debug\net8.0-win
 C:\Users\HP\Videos\AgricultureManagementSystem\WinFormsApp1\obj\Debug\net8.0-windows\AgricultureManagementSystem.pdb
 C:\Users\HP\Videos\AgricultureManagementSystem\WinFormsApp1\obj\Debug\net8.0-windows\AgricultureManagementSystem.genruntimeconfig.cache
 C:\Users\HP\Videos\AgricultureManagementSystem\WinFormsApp1\obj\Debug\net8.0-windows\ref\AgricultureManagementSystem.dll
-D:\AgricultureManagementSystem\AgricultureManagementSystem\WinFormsApp1\obj\Debug\net8.0-windows\AgricultureManagementSystem.csproj.AssemblyReference.cache
-D:\AgricultureManagementSystem\AgricultureManagementSystem\WinFormsApp1\obj\Debug\net8.0-windows\AgricultureManagementSystem.dll
-D:\AgricultureManagementSystem\AgricultureManagementSystem\WinFormsApp1\obj\Debug\net8.0-windows\refint\AgricultureManagementSystem.dll
-D:\AgricultureManagementSystem\AgricultureManagementSystem\WinFormsApp1\obj\Debug\net8.0-windows\AgricultureManagementSystem.pdb
 D:\AgricultureManagementSystem\AgricultureManagementSystem\WinFormsApp1\bin\Debug\net8.0-windows\AgricultureManagementSystem.exe
 D:\AgricultureManagementSystem\AgricultureManagementSystem\WinFormsApp1\bin\Debug\net8.0-windows\AgricultureManagementSystem.deps.json
 D:\AgricultureManagementSystem\AgricultureManagementSystem\WinFormsApp1\bin\Debug\net8.0-windows\AgricultureManagementSystem.runtimeconfig.json
@@ -67,14 +63,15 @@ D:\AgricultureManagementSystem\AgricultureManagementSystem\WinFormsApp1\bin\Debu
 D:\AgricultureManagementSystem\AgricultureManagementSystem\WinFormsApp1\bin\Debug\net8.0-windows\runtimes\win-x64\native\krb5_64.dll
 D:\AgricultureManagementSystem\AgricultureManagementSystem\WinFormsApp1\bin\Debug\net8.0-windows\runtimes\win-x64\native\krbcc64.dll
 D:\AgricultureManagementSystem\AgricultureManagementSystem\WinFormsApp1\bin\Debug\net8.0-windows\runtimes\browser\lib\net8.0\System.Text.Encodings.Web.dll
+D:\AgricultureManagementSystem\AgricultureManagementSystem\WinFormsApp1\obj\Debug\net8.0-windows\AgricultureManagementSystem.csproj.AssemblyReference.cache
 D:\AgricultureManagementSystem\AgricultureManagementSystem\WinFormsApp1\obj\Debug\net8.0-windows\AgricultureManagementSystem.AdminForm.resources
 D:\AgricultureManagementSystem\AgricultureManagementSystem\WinFormsApp1\obj\Debug\net8.0-windows\AgricultureManagementSystem.EducationForm.resources
 D:\AgricultureManagementSystem\AgricultureManagementSystem\WinFormsApp1\obj\Debug\net8.0-windows\AgricultureManagementSystem.ExpertDashboardForm.resources
 D:\AgricultureManagementSystem\AgricultureManagementSystem\WinFormsApp1\obj\Debug\net8.0-windows\AgricultureManagementSystem.FarmerDashboard.resources
+D:\AgricultureManagementSystem\AgricultureManagementSystem\WinFormsApp1\obj\Debug\net8.0-windows\AgricultureManagementSystem.Properties.Resources.resources
 D:\AgricultureManagementSystem\AgricultureManagementSystem\WinFormsApp1\obj\Debug\net8.0-windows\AgricultureManagementSystem.ForgotForm.resources
 D:\AgricultureManagementSystem\AgricultureManagementSystem\WinFormsApp1\obj\Debug\net8.0-windows\AgricultureManagementSystem.InfoForm.resources
 D:\AgricultureManagementSystem\AgricultureManagementSystem\WinFormsApp1\obj\Debug\net8.0-windows\AgricultureManagementSystem.LoginForm.resources
-D:\AgricultureManagementSystem\AgricultureManagementSystem\WinFormsApp1\obj\Debug\net8.0-windows\AgricultureManagementSystem.Properties.Resources.resources
 D:\AgricultureManagementSystem\AgricultureManagementSystem\WinFormsApp1\obj\Debug\net8.0-windows\AgricultureManagementSystem.SignUpForm.resources
 D:\AgricultureManagementSystem\AgricultureManagementSystem\WinFormsApp1\obj\Debug\net8.0-windows\AgricultureManagementSystem.csproj.GenerateResource.cache
 D:\AgricultureManagementSystem\AgricultureManagementSystem\WinFormsApp1\obj\Debug\net8.0-windows\AgricultureManagementSystem.GeneratedMSBuildEditorConfig.editorconfig
@@ -82,5 +79,8 @@ D:\AgricultureManagementSystem\AgricultureManagementSystem\WinFormsApp1\obj\Debu
 D:\AgricultureManagementSystem\AgricultureManagementSystem\WinFormsApp1\obj\Debug\net8.0-windows\AgricultureManagementSystem.AssemblyInfo.cs
 D:\AgricultureManagementSystem\AgricultureManagementSystem\WinFormsApp1\obj\Debug\net8.0-windows\AgricultureManagementSystem.csproj.CoreCompileInputs.cache
 D:\AgricultureManagementSystem\AgricultureManagementSystem\WinFormsApp1\obj\Debug\net8.0-windows\Agricult.A78D9E30.Up2Date
+D:\AgricultureManagementSystem\AgricultureManagementSystem\WinFormsApp1\obj\Debug\net8.0-windows\AgricultureManagementSystem.dll
+D:\AgricultureManagementSystem\AgricultureManagementSystem\WinFormsApp1\obj\Debug\net8.0-windows\refint\AgricultureManagementSystem.dll
+D:\AgricultureManagementSystem\AgricultureManagementSystem\WinFormsApp1\obj\Debug\net8.0-windows\AgricultureManagementSystem.pdb
 D:\AgricultureManagementSystem\AgricultureManagementSystem\WinFormsApp1\obj\Debug\net8.0-windows\AgricultureManagementSystem.genruntimeconfig.cache
 D:\AgricultureManagementSystem\AgricultureManagementSystem\WinFormsApp1\obj\Debug\net8.0-windows\ref\AgricultureManagementSystem.dll

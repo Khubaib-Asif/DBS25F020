@@ -3,16 +3,56 @@
   "WorkspaceRootPath": "D:\\AgricultureManagementSystem\\AgricultureManagementSystem\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{977DC77B-4156-4EFD-B9FA-259BD2D015C1}|WinFormsApp1\\AgricultureManagementSystem.csproj|d:\\agriculturemanagementsystem\\agriculturemanagementsystem\\winformsapp1\\agriculturemanagementsystem.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{977DC77B-4156-4EFD-B9FA-259BD2D015C1}|WinFormsApp1\\AgricultureManagementSystem.csproj|solutionrelative:winformsapp1\\agriculturemanagementsystem.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{977DC77B-4156-4EFD-B9FA-259BD2D015C1}|WinFormsApp1\\AgricultureManagementSystem.csproj|d:\\agriculturemanagementsystem\\agriculturemanagementsystem\\winformsapp1\\bl\\expertprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{977DC77B-4156-4EFD-B9FA-259BD2D015C1}|WinFormsApp1\\AgricultureManagementSystem.csproj|solutionrelative:winformsapp1\\bl\\expertprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{977DC77B-4156-4EFD-B9FA-259BD2D015C1}|WinFormsApp1\\AgricultureManagementSystem.csproj|d:\\agriculturemanagementsystem\\agriculturemanagementsystem\\winformsapp1\\ui\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{977DC77B-4156-4EFD-B9FA-259BD2D015C1}|WinFormsApp1\\AgricultureManagementSystem.csproj|d:\\agriculturemanagementsystem\\agriculturemanagementsystem\\winformsapp1\\dl\\expertprofiledl.cs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{977DC77B-4156-4EFD-B9FA-259BD2D015C1}|WinFormsApp1\\AgricultureManagementSystem.csproj|solutionrelative:winformsapp1\\dl\\expertprofiledl.cs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{977DC77B-4156-4EFD-B9FA-259BD2D015C1}|WinFormsApp1\\AgricultureManagementSystem.csproj|d:\\agriculturemanagementsystem\\agriculturemanagementsystem\\winformsapp1\\bl\\farmerprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{977DC77B-4156-4EFD-B9FA-259BD2D015C1}|WinFormsApp1\\AgricultureManagementSystem.csproj|solutionrelative:winformsapp1\\bl\\farmerprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{977DC77B-4156-4EFD-B9FA-259BD2D015C1}|WinFormsApp1\\AgricultureManagementSystem.csproj|d:\\agriculturemanagementsystem\\agriculturemanagementsystem\\winformsapp1\\dl\\farmerprofiledl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{977DC77B-4156-4EFD-B9FA-259BD2D015C1}|WinFormsApp1\\AgricultureManagementSystem.csproj|solutionrelative:winformsapp1\\dl\\farmerprofiledl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{977DC77B-4156-4EFD-B9FA-259BD2D015C1}|WinFormsApp1\\AgricultureManagementSystem.csproj|d:\\agriculturemanagementsystem\\agriculturemanagementsystem\\winformsapp1\\ui\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{977DC77B-4156-4EFD-B9FA-259BD2D015C1}|WinFormsApp1\\AgricultureManagementSystem.csproj|solutionrelative:winformsapp1\\ui\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{977DC77B-4156-4EFD-B9FA-259BD2D015C1}|WinFormsApp1\\AgricultureManagementSystem.csproj|d:\\agriculturemanagementsystem\\agriculturemanagementsystem\\winformsapp1\\bl\\users.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{977DC77B-4156-4EFD-B9FA-259BD2D015C1}|WinFormsApp1\\AgricultureManagementSystem.csproj|solutionrelative:winformsapp1\\bl\\users.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{977DC77B-4156-4EFD-B9FA-259BD2D015C1}|WinFormsApp1\\AgricultureManagementSystem.csproj|d:\\agriculturemanagementsystem\\agriculturemanagementsystem\\winformsapp1\\dl\\userdl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{977DC77B-4156-4EFD-B9FA-259BD2D015C1}|WinFormsApp1\\AgricultureManagementSystem.csproj|solutionrelative:winformsapp1\\dl\\userdl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{977DC77B-4156-4EFD-B9FA-259BD2D015C1}|WinFormsApp1\\AgricultureManagementSystem.csproj|D:\\AgricultureManagementSystem\\AgricultureManagementSystem\\winformsapp1\\ui\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{977DC77B-4156-4EFD-B9FA-259BD2D015C1}|WinFormsApp1\\AgricultureManagementSystem.csproj|solutionrelative:winformsapp1\\ui\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{977DC77B-4156-4EFD-B9FA-259BD2D015C1}|WinFormsApp1\\AgricultureManagementSystem.csproj|d:\\agriculturemanagementsystem\\agriculturemanagementsystem\\winformsapp1\\ui\\signupform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{977DC77B-4156-4EFD-B9FA-259BD2D015C1}|WinFormsApp1\\AgricultureManagementSystem.csproj|solutionrelative:winformsapp1\\ui\\signupform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{977DC77B-4156-4EFD-B9FA-259BD2D015C1}|WinFormsApp1\\AgricultureManagementSystem.csproj|d:\\agriculturemanagementsystem\\agriculturemanagementsystem\\winformsapp1\\ui\\signupform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{977DC77B-4156-4EFD-B9FA-259BD2D015C1}|WinFormsApp1\\AgricultureManagementSystem.csproj|solutionrelative:winformsapp1\\ui\\signupform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{977DC77B-4156-4EFD-B9FA-259BD2D015C1}|WinFormsApp1\\AgricultureManagementSystem.csproj|d:\\agriculturemanagementsystem\\agriculturemanagementsystem\\winformsapp1\\databasehelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{977DC77B-4156-4EFD-B9FA-259BD2D015C1}|WinFormsApp1\\AgricultureManagementSystem.csproj|solutionrelative:winformsapp1\\databasehelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{977DC77B-4156-4EFD-B9FA-259BD2D015C1}|WinFormsApp1\\AgricultureManagementSystem.csproj|d:\\agriculturemanagementsystem\\agriculturemanagementsystem\\winformsapp1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{977DC77B-4156-4EFD-B9FA-259BD2D015C1}|WinFormsApp1\\AgricultureManagementSystem.csproj|solutionrelative:winformsapp1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{977DC77B-4156-4EFD-B9FA-259BD2D015C1}|WinFormsApp1\\AgricultureManagementSystem.csproj|d:\\agriculturemanagementsystem\\agriculturemanagementsystem\\winformsapp1\\farmer\\farmerdashboard.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{977DC77B-4156-4EFD-B9FA-259BD2D015C1}|WinFormsApp1\\AgricultureManagementSystem.csproj|solutionrelative:winformsapp1\\farmer\\farmerdashboard.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,24 +62,115 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "AgricultureManagementSystem",
-              "DocumentMoniker": "D:\\AgricultureManagementSystem\\AgricultureManagementSystem\\WinFormsApp1\\AgricultureManagementSystem.csproj",
-              "RelativeDocumentMoniker": "WinFormsApp1\\AgricultureManagementSystem.csproj",
-              "ToolTip": "D:\\AgricultureManagementSystem\\AgricultureManagementSystem\\WinFormsApp1\\AgricultureManagementSystem.csproj",
-              "RelativeToolTip": "WinFormsApp1\\AgricultureManagementSystem.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-05-03T10:24:05.35Z",
+              "DocumentIndex": 1,
+              "Title": "ExpertProfileDl.cs.cs",
+              "DocumentMoniker": "D:\\AgricultureManagementSystem\\AgricultureManagementSystem\\WinFormsApp1\\DL\\ExpertProfileDl.cs.cs",
+              "RelativeDocumentMoniker": "WinFormsApp1\\DL\\ExpertProfileDl.cs.cs",
+              "ToolTip": "D:\\AgricultureManagementSystem\\AgricultureManagementSystem\\WinFormsApp1\\DL\\ExpertProfileDl.cs.cs",
+              "RelativeToolTip": "WinFormsApp1\\DL\\ExpertProfileDl.cs.cs",
+              "ViewState": "AgIAADoAAAAAAAAAAAAAAI0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-03T12:45:28.067Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
+              "Title": "ExpertProfile.cs",
+              "DocumentMoniker": "D:\\AgricultureManagementSystem\\AgricultureManagementSystem\\WinFormsApp1\\BL\\ExpertProfile.cs",
+              "RelativeDocumentMoniker": "WinFormsApp1\\BL\\ExpertProfile.cs",
+              "ToolTip": "D:\\AgricultureManagementSystem\\AgricultureManagementSystem\\WinFormsApp1\\BL\\ExpertProfile.cs",
+              "RelativeToolTip": "WinFormsApp1\\BL\\ExpertProfile.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-03T12:44:56.601Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "FarmerPRofileDl.cs",
+              "DocumentMoniker": "D:\\AgricultureManagementSystem\\AgricultureManagementSystem\\WinFormsApp1\\DL\\FarmerPRofileDl.cs",
+              "RelativeDocumentMoniker": "WinFormsApp1\\DL\\FarmerPRofileDl.cs",
+              "ToolTip": "D:\\AgricultureManagementSystem\\AgricultureManagementSystem\\WinFormsApp1\\DL\\FarmerPRofileDl.cs",
+              "RelativeToolTip": "WinFormsApp1\\DL\\FarmerPRofileDl.cs",
+              "ViewState": "AgIAAIQAAAAAAAAAAAAYwJUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-03T12:24:55.791Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "FarmerProfile.cs",
+              "DocumentMoniker": "D:\\AgricultureManagementSystem\\AgricultureManagementSystem\\WinFormsApp1\\BL\\FarmerProfile.cs",
+              "RelativeDocumentMoniker": "WinFormsApp1\\BL\\FarmerProfile.cs",
+              "ToolTip": "D:\\AgricultureManagementSystem\\AgricultureManagementSystem\\WinFormsApp1\\BL\\FarmerProfile.cs",
+              "RelativeToolTip": "WinFormsApp1\\BL\\FarmerProfile.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-03T12:24:33.047Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "LoginForm.cs",
+              "DocumentMoniker": "D:\\AgricultureManagementSystem\\AgricultureManagementSystem\\WinFormsApp1\\UI\\LoginForm.cs",
+              "RelativeDocumentMoniker": "WinFormsApp1\\UI\\LoginForm.cs",
+              "ToolTip": "D:\\AgricultureManagementSystem\\AgricultureManagementSystem\\WinFormsApp1\\UI\\LoginForm.cs",
+              "RelativeToolTip": "WinFormsApp1\\UI\\LoginForm.cs",
+              "ViewState": "AgIAAGcAAAAAAAAAAAAiwH0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-03T12:09:39.525Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Users.cs",
+              "DocumentMoniker": "D:\\AgricultureManagementSystem\\AgricultureManagementSystem\\WinFormsApp1\\BL\\Users.cs",
+              "RelativeDocumentMoniker": "WinFormsApp1\\BL\\Users.cs",
+              "ToolTip": "D:\\AgricultureManagementSystem\\AgricultureManagementSystem\\WinFormsApp1\\BL\\Users.cs",
+              "RelativeToolTip": "WinFormsApp1\\BL\\Users.cs",
+              "ViewState": "AgIAADUAAAAAAAAAAAA0wG8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-03T10:29:03.961Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "SignUpForm.Designer.cs",
+              "DocumentMoniker": "D:\\AgricultureManagementSystem\\AgricultureManagementSystem\\WinFormsApp1\\UI\\SignUpForm.Designer.cs",
+              "RelativeDocumentMoniker": "WinFormsApp1\\UI\\SignUpForm.Designer.cs",
+              "ToolTip": "D:\\AgricultureManagementSystem\\AgricultureManagementSystem\\WinFormsApp1\\UI\\SignUpForm.Designer.cs",
+              "RelativeToolTip": "WinFormsApp1\\UI\\SignUpForm.Designer.cs",
+              "ViewState": "AgIAAJwAAAAAAAAAAAAqwMYAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-03T11:56:19.569Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "UserDl.cs",
+              "DocumentMoniker": "D:\\AgricultureManagementSystem\\AgricultureManagementSystem\\WinFormsApp1\\DL\\UserDl.cs",
+              "RelativeDocumentMoniker": "WinFormsApp1\\DL\\UserDl.cs",
+              "ToolTip": "D:\\AgricultureManagementSystem\\AgricultureManagementSystem\\WinFormsApp1\\DL\\UserDl.cs",
+              "RelativeToolTip": "WinFormsApp1\\DL\\UserDl.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAAcwEIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-03T10:43:16.564Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "LoginForm.cs [Design]",
               "DocumentMoniker": "D:\\AgricultureManagementSystem\\AgricultureManagementSystem\\WinFormsApp1\\UI\\LoginForm.cs",
               "RelativeDocumentMoniker": "WinFormsApp1\\UI\\LoginForm.cs",
@@ -51,7 +182,44 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 9,
+              "Title": "SignUpForm.cs [Design]",
+              "DocumentMoniker": "D:\\AgricultureManagementSystem\\AgricultureManagementSystem\\WinFormsApp1\\UI\\SignUpForm.cs",
+              "RelativeDocumentMoniker": "WinFormsApp1\\UI\\SignUpForm.cs",
+              "ToolTip": "D:\\AgricultureManagementSystem\\AgricultureManagementSystem\\WinFormsApp1\\UI\\SignUpForm.cs [Design]",
+              "RelativeToolTip": "WinFormsApp1\\UI\\SignUpForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-03T11:06:14.803Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "DatabaseHelper.cs",
+              "DocumentMoniker": "D:\\AgricultureManagementSystem\\AgricultureManagementSystem\\WinFormsApp1\\DatabaseHelper.cs",
+              "RelativeDocumentMoniker": "WinFormsApp1\\DatabaseHelper.cs",
+              "ToolTip": "D:\\AgricultureManagementSystem\\AgricultureManagementSystem\\WinFormsApp1\\DatabaseHelper.cs",
+              "RelativeToolTip": "WinFormsApp1\\DatabaseHelper.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-03T11:40:57.681Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "FarmerDashboard.Designer.cs",
+              "DocumentMoniker": "D:\\AgricultureManagementSystem\\AgricultureManagementSystem\\WinFormsApp1\\Farmer\\FarmerDashboard.Designer.cs",
+              "RelativeDocumentMoniker": "WinFormsApp1\\Farmer\\FarmerDashboard.Designer.cs",
+              "ToolTip": "D:\\AgricultureManagementSystem\\AgricultureManagementSystem\\WinFormsApp1\\Farmer\\FarmerDashboard.Designer.cs",
+              "RelativeToolTip": "WinFormsApp1\\Farmer\\FarmerDashboard.Designer.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAqwA8AAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-03T10:56:57.229Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\AgricultureManagementSystem\\AgricultureManagementSystem\\WinFormsApp1\\Program.cs",
               "RelativeDocumentMoniker": "WinFormsApp1\\Program.cs",
@@ -59,8 +227,7 @@
               "RelativeToolTip": "WinFormsApp1\\Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-02T17:02:51.894Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-02T17:02:51.894Z"
             }
           ]
         }
