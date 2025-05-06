@@ -1,22 +1,19 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Data;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using AgricultureManagementSystem.BL;
 using MySql.Data.MySqlClient;
+using AgricultureManagementSystem.BL;
 
 namespace AgricultureManagementSystem.DL
 {
     public class VendorProfileDl
     {
-        public bool InsertVendor(VendorProfile vendor)
+        public bool InsertVendorProfile(VendorProfile vendor)
         {
-            string query = @"INSERT INTO vendor_profile 
-                          ( first_name, last_name, address, cnic, contact_info) 
+            string query = @"INSERT INTO vendorprofile 
+                          (first_name, last_name, address, cnic, contact_info) 
                           VALUES 
-                          ( @firstName, @lastName, @address, @cnic, @contactInfo)";
+                          (@firstName, @lastName, @address, @cnic, @contact)";
 
             using (var conn = DatabaseHelper.Instance.GetConnection())
             {
@@ -27,35 +24,43 @@ namespace AgricultureManagementSystem.DL
                     cmd.Parameters.AddWithValue("@lastName", vendor.LastName);
                     cmd.Parameters.AddWithValue("@address", vendor.Address);
                     cmd.Parameters.AddWithValue("@cnic", vendor.CNIC);
-                    cmd.Parameters.AddWithValue("@contactInfo", vendor.ContactInfo);
+                    cmd.Parameters.AddWithValue("@contact", vendor.Contact);
 
                     return cmd.ExecuteNonQuery() > 0;
                 }
             }
         }
 
-        public List<VendorProfile> GetAllVendors()
+        public List<VendorProfile> GetAllVendorProfiles()
         {
             List<VendorProfile> vendors = new List<VendorProfile>();
-            string query = "SELECT * FROM vendor_profile";
+            string query = "SELECT * FROM vendorprofile";
 
             DataTable dt = DatabaseHelper.Instance.GetData(query);
             foreach (DataRow row in dt.Rows)
             {
-                vendors.Add(MapRowToVendor(row));
+                vendors.Add(new VendorProfile
+                {
+                    VendorId = Convert.ToInt32(row["vendor_id"]),
+                    FirstName = row["first_name"].ToString(),
+                    LastName = row["last_name"].ToString(),
+                    Address = row["address"].ToString(),
+                    CNIC = row["cnic"].ToString(),
+                    Contact = row["contact_info"].ToString()
+                });
             }
 
             return vendors;
         }
 
-        public bool UpdateVendor(VendorProfile vendor)
+        public bool UpdateVendorProfile(VendorProfile vendor)
         {
-            string query = @"UPDATE vendor_profile SET 
-                          first_name = @firstName, 
-                          last_name = @lastName, 
-                          address = @address, 
-                          cnic = @cnic, 
-                          contact_info = @contactInfo 
+            string query = @"UPDATE vendorprofile 
+                          SET first_name = @firstName, 
+                              last_name = @lastName, 
+                              address = @address,
+                              cnic = @cnic,
+                              contact_info = @contact
                           WHERE vendor_id = @vendorId";
 
             using (var conn = DatabaseHelper.Instance.GetConnection())
@@ -67,7 +72,7 @@ namespace AgricultureManagementSystem.DL
                     cmd.Parameters.AddWithValue("@lastName", vendor.LastName);
                     cmd.Parameters.AddWithValue("@address", vendor.Address);
                     cmd.Parameters.AddWithValue("@cnic", vendor.CNIC);
-                    cmd.Parameters.AddWithValue("@contactInfo", vendor.ContactInfo);
+                    cmd.Parameters.AddWithValue("@contact", vendor.Contact);
                     cmd.Parameters.AddWithValue("@vendorId", vendor.VendorId);
 
                     return cmd.ExecuteNonQuery() > 0;
@@ -75,9 +80,10 @@ namespace AgricultureManagementSystem.DL
             }
         }
 
-        public bool DeleteVendor(int vendorId)
+        public bool DeleteVendorProfile(int vendorId)
         {
-            string query = "DELETE FROM vendor_profile WHERE vendor_id = @vendorId";
+            string query = "DELETE FROM vendorprofile WHERE vendor_id = @vendorId";
+
             using (var conn = DatabaseHelper.Instance.GetConnection())
             {
                 conn.Open();
@@ -89,9 +95,10 @@ namespace AgricultureManagementSystem.DL
             }
         }
 
-        public VendorProfile GetVendorById(int id)
+        public VendorProfile GetVendorProfileById(int id)
         {
-            string query = "SELECT * FROM vendor_profile WHERE vendor_id = @vendorId";
+            string query = "SELECT * FROM vendorprofile WHERE vendor_id = @vendorId";
+
             using (var conn = DatabaseHelper.Instance.GetConnection())
             {
                 conn.Open();
@@ -109,7 +116,7 @@ namespace AgricultureManagementSystem.DL
                                 LastName = reader["last_name"].ToString(),
                                 Address = reader["address"].ToString(),
                                 CNIC = reader["cnic"].ToString(),
-                                ContactInfo = reader["contact_info"].ToString()
+                                Contact = reader["contact_info"].ToString()
                             };
                         }
                     }
@@ -119,19 +126,35 @@ namespace AgricultureManagementSystem.DL
             return null;
         }
 
-        
-
-        private VendorProfile MapRowToVendor(DataRow row)
+        public VendorProfile GetVendorProfileByCnic(string cnic)
         {
-            return new VendorProfile
+            string query = "SELECT * FROM vendorprofile WHERE cnic = @cnic";
+
+            using (var conn = DatabaseHelper.Instance.GetConnection())
             {
-                VendorId = Convert.ToInt32(row["vendor_id"]),
-                FirstName = row["first_name"].ToString(),
-                LastName = row["last_name"].ToString(),
-                Address = row["address"].ToString(),
-                CNIC = row["cnic"].ToString(),
-                ContactInfo = row["contact_info"].ToString()
-            };
+                conn.Open();
+                using (var cmd = new MySqlCommand(query, conn))
+                {
+                    cmd.Parameters.AddWithValue("@cnic", cnic);
+                    using (var reader = cmd.ExecuteReader())
+                    {
+                        if (reader.Read())
+                        {
+                            return new VendorProfile
+                            {
+                                VendorId = Convert.ToInt32(reader["vendor_id"]),
+                                FirstName = reader["first_name"].ToString(),
+                                LastName = reader["last_name"].ToString(),
+                                Address = reader["address"].ToString(),
+                                CNIC = reader["cnic"].ToString(),
+                                Contact = reader["contact_info"].ToString()
+                            };
+                        }
+                    }
+                }
+            }
+
+            return null;
         }
     }
 }

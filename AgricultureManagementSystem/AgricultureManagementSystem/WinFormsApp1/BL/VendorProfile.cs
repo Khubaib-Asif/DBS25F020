@@ -7,98 +7,51 @@ using AgricultureManagementSystem.DL;
 
 namespace AgricultureManagementSystem.BL
 {
-    public class VendorProfile
+    public class VendorProfile : Profile
     {
         private int _vendorId;
-        private string _firstName;
-        private string _lastName;
-        private string _address;
-        private string _cnic;
-        private string _contactInfo;
-           
-        // getters and setters
         public int VendorId
         {
             get { return _vendorId; }
             set { _vendorId = value; }
         }
-        public string FirstName
-        {
-            get { return _firstName; }
-            set
-            {
-                _firstName = value;
-            }
-        }
 
-        public string LastName
-        {
-            get { return _lastName; }
-            set { _lastName = value; }
-        }
-
-        public string Address
-        {
-            get { return _address; }
-            set
-            {
-                _address = value;
-            }
-        }
-
-        public string CNIC
-        {
-            get { return _cnic; }
-            set
-            {
-                _cnic = value;
-            }
-        }
-
-        public string ContactInfo
-        {
-            get { return _contactInfo; }
-            set
-            {
-                _contactInfo = value;
-            }
-        }
-
-        // Constructor
-        public VendorProfile()
-        {
-
-        }
-
-        public bool Save()
+        // Implement abstract methods
+        public override bool Save()
         {
             VendorProfileDl dl = new VendorProfileDl();
-            return dl.InsertVendor(this);
+            return dl.InsertVendorProfile(this);
         }
 
-        public bool Update()
+        public override bool Update()
         {
             VendorProfileDl dl = new VendorProfileDl();
-            return dl.UpdateVendor(this);
+            return dl.UpdateVendorProfile(this);
         }
 
-        public bool Delete()
+        public override bool Delete()
         {
             VendorProfileDl dl = new VendorProfileDl();
-            return dl.DeleteVendor(this.VendorId);
+            return dl.DeleteVendorProfile(this.VendorId);
         }
 
         // Static methods for retrieval
         public static List<VendorProfile> GetAll()
         {
             VendorProfileDl dl = new VendorProfileDl();
-            return dl.GetAllVendors();
+            return dl.GetAllVendorProfiles();
         }
 
         public static VendorProfile GetById(int id)
         {
             VendorProfileDl dl = new VendorProfileDl();
-            return dl.GetVendorById(id);
+            return dl.GetVendorProfileById(id);
+        }
+
+        public static VendorProfile GetByCnic(string cnic)
+        {
+            VendorProfileDl dl = new VendorProfileDl();
+            return dl.GetVendorProfileByCnic(cnic);
         }
     }
 }

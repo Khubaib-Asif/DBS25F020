@@ -1,51 +1,76 @@
 ﻿using System;
 using System.Collections.Generic;
+using AgricultureManagementSystem.DL;
 
-namespace AgricultureManagementSystem
+namespace AgricultureManagementSystem.BL
 {
-    public class FarmerProfile
+    public class FarmerProfile : Profile
     {
-        public int FarmerID { get; set; }
-        public string FirstName { get; set; }
-        public string LastName { get; set; }
-        public string CNIC { get; set; }
-        public string profilepiclink { get; set; }
-        public string Address { get; set; }
-        public string contact { get; set; }
-        public string Email { get; set; }
-        public string Dob { get; set; }  // You may convert to DateTime if needed
-        public int age { get; set; }
+        private int _farmerId;
+        private string _profilePic;
+        private DateTime _dob;
 
-        // === Business Logic Layer ===
-
-        public bool Save()
+        // Additional getter setters
+        public int FarmerId
         {
-            FarmerProfileDl dl = new FarmerProfileDl();
-            return dl.InsertFarmer(this);
+            get { return _farmerId; }
+            set { _farmerId = value; }
         }
 
-        public bool Update()
+        public string ProfilePic
         {
-            FarmerProfileDl dl = new FarmerProfileDl();
-            return dl.UpdateFarmer(this);
+            get { return _profilePic; }
+            set { _profilePic = value; }
         }
 
-        public bool Delete()
+        public DateTime Dob
         {
-            FarmerProfileDl dl = new FarmerProfileDl();
-            return dl.DeleteFarmer(this.FarmerID);
+            get { return _dob; }
+            set { _dob = value; }
         }
 
+        // Implement abstract methods 
+        public override bool Save()
+        {
+            FarmerProfileDl dl = new FarmerProfileDl();
+            return dl.InsertFarmerProfile(this);
+        }
+
+        public override bool Update()
+        {
+            FarmerProfileDl dl = new FarmerProfileDl();
+            return dl.UpdateFarmerProfile(this);
+        }
+
+        public override bool Delete()
+        {
+            FarmerProfileDl dl = new FarmerProfileDl();
+            return dl.DeleteFarmerProfile(this.FarmerId);
+        }
+
+        // Static methods for retrieval
         public static List<FarmerProfile> GetAll()
         {
             FarmerProfileDl dl = new FarmerProfileDl();
-            return dl.GetAllFarmers();
+            return dl.GetAllFarmerProfiles();
         }
 
         public static FarmerProfile GetById(int id)
         {
             FarmerProfileDl dl = new FarmerProfileDl();
-            return dl.GetFarmerById(id);
+            return dl.GetFarmerProfileById(id);
+        }
+
+        public static FarmerProfile GetByCnic(string cnic)
+        {
+            FarmerProfileDl dl = new FarmerProfileDl();
+            return dl.GetFarmerProfileByCnic(cnic);
+        }
+
+        public static FarmerProfile GetByEmail(string email)
+        {
+            FarmerProfileDl dl = new FarmerProfileDl();
+            return dl.GetFarmerProfileByEmail(email);
         }
     }
 }
