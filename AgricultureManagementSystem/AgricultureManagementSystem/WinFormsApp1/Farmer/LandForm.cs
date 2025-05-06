@@ -7,21 +7,17 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-namespace AgricultureManagementSystem
+
+namespace AgricultureManagementSystem.Farmer
 {
-    public partial class ExpertDashboardForm : Form
+    public partial class LandForm : Form
     {
-        public ExpertDashboardForm()
+        public LandForm()
         {
             InitializeComponent();
         }
 
-        private void tabEditProfile_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
+        private void LandForm_Load(object sender, EventArgs e)
         {
 
         }

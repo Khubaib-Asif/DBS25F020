@@ -7,24 +7,22 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-namespace AgricultureManagementSystem
-{
-    public partial class EducationForm : Form
-    {
-        private int expertId;
 
-        public EducationForm(int expertId)
+namespace AgricultureManagementSystem.Farmer
+{
+    public partial class ReportForm : Form
+    {
+        public ReportForm()
         {
             InitializeComponent();
-            this.expertId = expertId;
         }
 
-        private void panel2_Paint(object sender, PaintEventArgs e)
+        private void txtarea_TextChanged(object sender, EventArgs e)
         {
 
         }
 
-        private void label4_Click(object sender, EventArgs e)
+        private void tabsuggestion_Click(object sender, EventArgs e)
         {
 
         }

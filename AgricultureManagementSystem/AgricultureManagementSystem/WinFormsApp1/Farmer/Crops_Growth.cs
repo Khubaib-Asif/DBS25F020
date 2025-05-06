@@ -7,21 +7,17 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-namespace AgricultureManagementSystem
+
+namespace AgricultureManagementSystem.Farmer
 {
-    public partial class ExpertDashboardForm : Form
+    public partial class Crops_Growth : Form
     {
-        public ExpertDashboardForm()
+        public Crops_Growth()
         {
             InitializeComponent();
         }
 
-        private void tabEditProfile_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
+        private void panelWeather_Paint(object sender, PaintEventArgs e)
         {
 
         }

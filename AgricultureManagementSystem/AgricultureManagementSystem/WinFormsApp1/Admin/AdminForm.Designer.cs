@@ -60,6 +60,8 @@
             colEquipmentName = new DataGridViewTextBoxColumn();
             colEquipmentDesc = new DataGridViewTextBoxColumn();
             tabCropCatalog = new TabPage();
+            textBox1 = new TextBox();
+            label2 = new Label();
             btnDeleteCrop = new Button();
             btnUpdateCrop = new Button();
             btnAddCrop = new Button();
@@ -82,8 +84,6 @@
             statusStrip1 = new StatusStrip();
             toolStripStatusLabel1 = new ToolStripStatusLabel();
             toolStripStatusLastLogin = new ToolStripStatusLabel();
-            textBox1 = new TextBox();
-            label2 = new Label();
             menuStrip1.SuspendLayout();
             tabControlAdmin.SuspendLayout();
             tabExpertRegistration.SuspendLayout();
@@ -101,7 +101,7 @@
             // 
             // menuStrip1
             // 
-            menuStrip1.BackColor = Color.FromArgb(76, 175, 80);
+            menuStrip1.BackColor = Color.FromArgb(23, 24, 29);
             menuStrip1.Items.AddRange(new ToolStripItem[] { fileToolStripMenuItem });
             menuStrip1.Location = new Point(0, 0);
             menuStrip1.Name = "menuStrip1";
@@ -112,7 +112,9 @@
             // 
             // fileToolStripMenuItem
             // 
+            fileToolStripMenuItem.BackColor = Color.FromArgb(23, 24, 29);
             fileToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { logoutToolStripMenuItem, exitToolStripMenuItem });
+            fileToolStripMenuItem.ForeColor = Color.White;
             fileToolStripMenuItem.Name = "fileToolStripMenuItem";
             fileToolStripMenuItem.Size = new Size(37, 20);
             fileToolStripMenuItem.Text = "File";
@@ -120,13 +122,13 @@
             // logoutToolStripMenuItem
             // 
             logoutToolStripMenuItem.Name = "logoutToolStripMenuItem";
-            logoutToolStripMenuItem.Size = new Size(112, 22);
+            logoutToolStripMenuItem.Size = new Size(180, 22);
             logoutToolStripMenuItem.Text = "Logout";
             // 
             // exitToolStripMenuItem
             // 
             exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            exitToolStripMenuItem.Size = new Size(112, 22);
+            exitToolStripMenuItem.Size = new Size(180, 22);
             exitToolStripMenuItem.Text = "Exit";
             // 
             // tabControlAdmin
@@ -544,6 +546,26 @@
             tabCropCatalog.Text = "Crop Catalog";
             tabCropCatalog.UseVisualStyleBackColor = true;
             // 
+            // textBox1
+            // 
+            textBox1.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            textBox1.Location = new Point(505, 109);
+            textBox1.Margin = new Padding(4, 3, 4, 3);
+            textBox1.Multiline = true;
+            textBox1.Name = "textBox1";
+            textBox1.Size = new Size(626, 69);
+            textBox1.TabIndex = 9;
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Location = new Point(505, 86);
+            label2.Margin = new Padding(4, 0, 4, 0);
+            label2.Name = "label2";
+            label2.Size = new Size(96, 15);
+            label2.TabIndex = 8;
+            label2.Text = "Crop Description";
+            // 
             // btnDeleteCrop
             // 
             btnDeleteCrop.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
@@ -783,26 +805,6 @@
             toolStripStatusLastLogin.Name = "toolStripStatusLastLogin";
             toolStripStatusLastLogin.Size = new Size(41, 17);
             toolStripStatusLastLogin.Text = "[TIME]";
-            // 
-            // textBox1
-            // 
-            textBox1.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
-            textBox1.Location = new Point(505, 109);
-            textBox1.Margin = new Padding(4, 3, 4, 3);
-            textBox1.Multiline = true;
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(626, 69);
-            textBox1.TabIndex = 9;
-            // 
-            // label2
-            // 
-            label2.AutoSize = true;
-            label2.Location = new Point(505, 86);
-            label2.Margin = new Padding(4, 0, 4, 0);
-            label2.Name = "label2";
-            label2.Size = new Size(96, 15);
-            label2.TabIndex = 8;
-            label2.Text = "Crop Description";
             // 
             // AdminForm
             // 

@@ -1,3 +1,5 @@
+using AgricultureManagementSystem.Farmer;
+
 namespace AgricultureManagementSystem
 {
     static class Program
@@ -6,7 +8,8 @@ namespace AgricultureManagementSystem
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new LoginForm()); // Set LoginForm as the startup form
+            int farmerId = 123;
+            Application.Run(new WaterManagemntForm());
         }
     }
 }

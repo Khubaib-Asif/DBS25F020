@@ -45,15 +45,13 @@
             // 
             // panel3
             // 
-            panel3.BackColor = Color.LightGreen;
+            panel3.BackColor = Color.White;
             panel3.Controls.Add(panel2);
             panel3.Dock = DockStyle.Fill;
             panel3.Location = new Point(0, 0);
-            panel3.Margin = new Padding(4, 5, 4, 5);
             panel3.Name = "panel3";
-            panel3.Size = new Size(1406, 1018);
+            panel3.Size = new Size(984, 611);
             panel3.TabIndex = 2;
-            panel3.Paint += panel3_Paint;
             // 
             // panel2
             // 
@@ -68,27 +66,25 @@
             panel2.Controls.Add(txtEmail);
             panel2.Controls.Add(label5);
             panel2.Controls.Add(label4);
-            panel2.Location = new Point(364, 68);
-            panel2.Margin = new Padding(4, 5, 4, 5);
+            panel2.Location = new Point(255, 41);
             panel2.Name = "panel2";
-            panel2.Size = new Size(727, 900);
+            panel2.Size = new Size(509, 540);
             panel2.TabIndex = 2;
             // 
             // btnRegister
             // 
             btnRegister.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
-            btnRegister.BackColor = Color.LightGreen;
+            btnRegister.BackColor = Color.White;
             btnRegister.Cursor = Cursors.Hand;
-            btnRegister.FlatAppearance.BorderColor = Color.LightGreen;
-            btnRegister.FlatAppearance.MouseDownBackColor = Color.LightGreen;
-            btnRegister.FlatAppearance.MouseOverBackColor = Color.LightGreen;
+            btnRegister.FlatAppearance.BorderColor = Color.White;
+            btnRegister.FlatAppearance.MouseDownBackColor = Color.White;
+            btnRegister.FlatAppearance.MouseOverBackColor = Color.White;
             btnRegister.FlatStyle = FlatStyle.Flat;
             btnRegister.Font = new Font("Segoe UI Semibold", 9.75F, FontStyle.Bold);
             btnRegister.ForeColor = SystemColors.Highlight;
-            btnRegister.Location = new Point(159, 763);
-            btnRegister.Margin = new Padding(4, 5, 4, 5);
+            btnRegister.Location = new Point(111, 458);
             btnRegister.Name = "btnRegister";
-            btnRegister.Size = new Size(367, 67);
+            btnRegister.Size = new Size(257, 40);
             btnRegister.TabIndex = 8;
             btnRegister.Text = "Don't have an account? Register here.";
             btnRegister.UseVisualStyleBackColor = false;
@@ -96,18 +92,17 @@
             // btnForgot
             // 
             btnForgot.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
-            btnForgot.BackColor = Color.LightGreen;
+            btnForgot.BackColor = Color.White;
             btnForgot.Cursor = Cursors.Hand;
-            btnForgot.FlatAppearance.BorderColor = Color.LightGreen;
-            btnForgot.FlatAppearance.MouseDownBackColor = Color.LightGreen;
-            btnForgot.FlatAppearance.MouseOverBackColor = Color.LightGreen;
+            btnForgot.FlatAppearance.BorderColor = Color.White;
+            btnForgot.FlatAppearance.MouseDownBackColor = Color.White;
+            btnForgot.FlatAppearance.MouseOverBackColor = Color.White;
             btnForgot.FlatStyle = FlatStyle.Flat;
             btnForgot.Font = new Font("Segoe UI Semibold", 9.75F, FontStyle.Bold);
             btnForgot.ForeColor = SystemColors.Highlight;
-            btnForgot.Location = new Point(136, 555);
-            btnForgot.Margin = new Padding(4, 5, 4, 5);
+            btnForgot.Location = new Point(95, 333);
             btnForgot.Name = "btnForgot";
-            btnForgot.Size = new Size(216, 67);
+            btnForgot.Size = new Size(151, 40);
             btnForgot.TabIndex = 7;
             btnForgot.Text = "Forgot Password";
             btnForgot.UseVisualStyleBackColor = false;
@@ -118,10 +113,9 @@
             cbShowpassword.Cursor = Cursors.Hand;
             cbShowpassword.Font = new Font("Segoe UI", 8.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             cbShowpassword.ForeColor = Color.DimGray;
-            cbShowpassword.Location = new Point(381, 573);
-            cbShowpassword.Margin = new Padding(4, 5, 4, 5);
+            cbShowpassword.Location = new Point(267, 344);
             cbShowpassword.Name = "cbShowpassword";
-            cbShowpassword.Size = new Size(152, 27);
+            cbShowpassword.Size = new Size(107, 17);
             cbShowpassword.TabIndex = 6;
             cbShowpassword.Text = "Show Password";
             cbShowpassword.UseVisualStyleBackColor = true;
@@ -130,28 +124,25 @@
             // 
             button1.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
             button1.BackColor = Color.LightGray;
-            button1.FlatAppearance.BorderColor = Color.LightGreen;
+            button1.FlatAppearance.BorderColor = Color.White;
             button1.FlatStyle = FlatStyle.Flat;
             button1.Font = new Font("Segoe UI Semibold", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button1.ForeColor = Color.Black;
-            button1.Location = new Point(273, 678);
-            button1.Margin = new Padding(4, 5, 4, 5);
+            button1.ForeColor = Color.FromArgb(23, 24, 29);
+            button1.Location = new Point(191, 407);
             button1.Name = "button1";
-            button1.Size = new Size(143, 67);
+            button1.Size = new Size(100, 40);
             button1.TabIndex = 5;
             button1.Text = "Log in";
             button1.UseVisualStyleBackColor = false;
-            button1.Click += button1_Click;
             // 
             // txtPassword
             // 
             txtPassword.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             txtPassword.Font = new Font("Microsoft Sans Serif", 14.25F);
             txtPassword.ForeColor = SystemColors.InfoText;
-            txtPassword.Location = new Point(159, 493);
-            txtPassword.Margin = new Padding(4, 5, 4, 5);
+            txtPassword.Location = new Point(111, 296);
             txtPassword.Name = "txtPassword";
-            txtPassword.Size = new Size(374, 40);
+            txtPassword.Size = new Size(263, 29);
             txtPassword.TabIndex = 4;
             txtPassword.UseSystemPasswordChar = true;
             // 
@@ -159,10 +150,9 @@
             // 
             label6.AutoSize = true;
             label6.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label6.Location = new Point(159, 437);
-            label6.Margin = new Padding(4, 0, 4, 0);
+            label6.Location = new Point(111, 262);
             label6.Name = "label6";
-            label6.Size = new Size(115, 32);
+            label6.Size = new Size(79, 21);
             label6.TabIndex = 3;
             label6.Text = "Password";
             // 
@@ -171,45 +161,41 @@
             txtEmail.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             txtEmail.Font = new Font("Arial Rounded MT Bold", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             txtEmail.ForeColor = SystemColors.InfoText;
-            txtEmail.Location = new Point(159, 350);
-            txtEmail.Margin = new Padding(4, 5, 4, 5);
+            txtEmail.Location = new Point(111, 210);
             txtEmail.Name = "txtEmail";
-            txtEmail.Size = new Size(374, 40);
+            txtEmail.Size = new Size(263, 29);
             txtEmail.TabIndex = 2;
             // 
             // label5
             // 
             label5.AutoSize = true;
             label5.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label5.Location = new Point(159, 293);
-            label5.Margin = new Padding(4, 0, 4, 0);
+            label5.Location = new Point(111, 176);
             label5.Name = "label5";
-            label5.Size = new Size(72, 32);
+            label5.Size = new Size(48, 21);
             label5.TabIndex = 1;
             label5.Text = "Email";
             // 
             // label4
             // 
             label4.AutoSize = true;
-            label4.BackColor = Color.LightGreen;
+            label4.BackColor = Color.White;
             label4.Font = new Font("Segoe UI Semibold", 26.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label4.ForeColor = Color.FromArgb(23, 24, 29);
-            label4.Location = new Point(136, 105);
-            label4.Margin = new Padding(4, 0, 4, 0);
+            label4.Location = new Point(95, 63);
             label4.Name = "label4";
-            label4.Size = new Size(482, 71);
+            label4.Size = new Size(317, 47);
             label4.TabIndex = 0;
             label4.Text = "Sign In to AgriHub";
             // 
             // LoginForm
             // 
-            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             AutoSizeMode = AutoSizeMode.GrowAndShrink;
             BackColor = Color.FromArgb(242, 245, 250);
-            ClientSize = new Size(1406, 1018);
+            ClientSize = new Size(984, 611);
             Controls.Add(panel3);
-            Margin = new Padding(4, 5, 4, 5);
             Name = "LoginForm";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Sign Up";

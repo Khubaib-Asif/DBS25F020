@@ -11,9 +11,12 @@ namespace AgricultureManagementSystem
 {
     public partial class FarmerDashboard : Form
     {
-        public FarmerDashboard()
+        private int farmerId;
+
+        public FarmerDashboard(int farmerId)
         {
             InitializeComponent();
+            this.farmerId = farmerId;
         }
 
         private void FarmerDashboard_Load(object sender, EventArgs e)
@@ -22,6 +25,11 @@ namespace AgricultureManagementSystem
         }
 
         private void panelMain_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
         {
 
         }
